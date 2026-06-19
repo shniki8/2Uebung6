@@ -29,5 +29,15 @@ public class Movie {
     public void setTitle(String title) {
         this.title = title;
     }
-
+    public void printMovieDetails(Movie[] movies){
+        for (int i = 0; i < movies.length; i++) {
+            if (movies[i] instanceof AnimationMovie){
+                System.out.println(((AnimationMovie) movies[i]).getAnimationInfo());
+            } else if (movies[i] instanceof ActionMovie) {
+                System.out.println(((ActionMovie) movies[i]).getActionInfo());
+            }else{
+                System.out.println(movies[i].toString());
+            }
+        }
+    }
 }

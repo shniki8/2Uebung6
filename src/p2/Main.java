@@ -46,6 +46,14 @@ public class Main {
                 }
             }
             return null;
-
+    }
+    public static int countExplosions(Movie[] movies){
+        int sum = 0;
+        for (int i = 0; i < movies.length; i++) {
+            if (movies[i] instanceof ActionMovie){
+                sum += ((ActionMovie) movies[i]).getExplosionCount();
+            }
+        }
+        return sum;
     }
 }
