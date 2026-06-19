@@ -16,4 +16,8 @@ public class Mage extends Character{
         }
         else{} //Tja wohl zu schwach nh :)
     }
+    @Override
+    public void gainXP(int amount){
+        super.gainXP(amount+10);
+    }
 }

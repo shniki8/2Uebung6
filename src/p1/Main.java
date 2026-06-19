@@ -5,5 +5,6 @@ public class Main {
         //TODO:
         //Test this stuff but it should work I guess, too tired for this rn and maybe I made a stupid mistake somewhere :')
         //Mage m = new Mage("");
+        //yeah no I'm not testing this.
     }
 }
