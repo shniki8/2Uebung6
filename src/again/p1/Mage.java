@@ -10,6 +10,12 @@ public class Mage extends Character{
     }
 
     @Override
+    public void gainXP(int amount) {
+        super.gainXP(amount+10);
+
+    }
+
+    @Override
     public void attack(Character target) {
         if (mana >= spellpower){
             super.attack(target);
@@ -17,6 +23,5 @@ public class Mage extends Character{
         }else{
             System.out.println("Not enough mana!");
         }
-
     }
 }
