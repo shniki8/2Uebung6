@@ -3,7 +3,22 @@ package again.p2;
 public class Main {
     public static void main(String[] args) {
         //Kein Test Code :'(
+        //Immernoch nicht :D
     }
+
+    static int countExplosions(Movie[] movies){
+        int count = 0;
+        for(Movie m : movies){
+            if (m instanceof ActionMovie a){
+                count += a.getExplosionCount(); //Pattern Matching!! :D
+            }
+        }
+
+
+
+        return count;
+    }
+
 
     public static Movie makeOrder(Movie[] movies, int pos, int cat){ //Annahme: pos >= 0 && pos <= movies.length-1
         if (pos >= 0 && pos <= movies.length-1){ //Mir aber egal :)
